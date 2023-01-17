@@ -1,0 +1,11 @@
+On the website https://old.coindesk.com/coindesk-api several APIs are described to get information about Bitcoin. 
+The API endpoint https://api.coindesk.com/v1/bpi/currentprice.json 
+returns the current Bitcoin Price in 3 different currencies as JSON string (see an example below). 
+The prices are updated every minute.
+
+The given code example (https://moodle.bfh.ch/pluginfile.php/2029623/mod_assign/intro/bitcoin.kt) reads and parses 
+the JSON structure with the jacksonObjectMapper from the fasterxml library and
+converts it into Kotlin objects (use the following pom.xml to run the code). 
+
+Implement a TornadoFX UI that shows the current prices for Bitcoins. 
+The Bitcoin prices must be retrieved online in an asynchronous way using Kotlin coroutines
